@@ -14,7 +14,14 @@ html{
     padding: 0 20px;
     margin: 0 auto;
 }
-
+h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #1B1A17;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
 /*Header*/
 .header{
     max-width: 1160px;
@@ -197,7 +204,7 @@ fieldset legend {
 
     margin-bottom: 60px;
     position: relative;
-    
+
 }
 .product__title{
     font-weight: 700;
@@ -257,13 +264,78 @@ fieldset legend {
 }
 
 
+/* Belt */
+.belts__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.belts__item {
+    width: 360px;
+    position: relative;
+    /* width: 360px;
+     min-height: 350px;
+     */
+     text-align: center;
+}
+.belts__btn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.belts__info{
+  text-align: left;
+}
+.belts__img{
+
+    /* display: block; */
+    /* object-fit: cover;
+    width: 100%;
+    height: 100%; */
+    /* position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
 /* Footer */
 .footer{
 
     background: #444240;
     padding-top: 70px;
+    padding-bottom: 70px;
+}
+.footer__box{
+    color: rgba(255, 255, 255, 0.75);
 }
 .footer .container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer__title{
+    text-transform: uppercase;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer__list li {
+    margin-bottom: 15px;
+}
+.footer__list li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+.footer__list li a:hover{
+    text-decoration: underline;
 }

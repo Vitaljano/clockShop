@@ -93,87 +93,159 @@ h2{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+/* Filter */
 
-.filter{
-    width: 230px;
-    max-width: 430px;
+.filter {
+  width: 230px;
+  max-width: 430px;
 }
-.filter__btn{
-    font-size: 12px;
-    font-weight: 700;
-    padding: 25px;
-    display: block;
-    text-transform: uppercase;
-    width: 100%;
-    border:2px solid #E7E0CF;
-    background: none;
-    cursor: pointer;
+
+.filter__btn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 25px;
+  display: block;
+  text-transform: uppercase;
+  width: 100%;
+  border:2px solid #E7E0CF;
+  background: none;
+  cursor: pointer;
 }
-fieldset{
-    border: none;
-    position: relative;
+
+fieldset {
+  border: none;
+  position: relative;
+  padding: 0;
+  /* margin-bottom: 30px; */
 }
 
 fieldset legend {
-    margin-bottom: 27px;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: capitalize;
-}
-.btn-toggle{
-    position: absolute;
-    right: 10px;
-    top: 0;
-    cursor: pointer;
-    background: none;
-    border: none;
-    height: 20px;
-    display: flex;
-    /* justify-content: center; */
-
-}
-.btn-toggle__minus{
-    display: inline-block;
-    width: 10px;
-    height: 1px;
-    background: #1B1A17;
-}
-.btn-toggle__plus{
-    position: relative;
-    display: inline-block;
-    width: 10px;
-    height: 1px;
-    background: #1B1A17;
-}
-.btn-toggle__plus::before{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 1px;
-    background: #1B1A17;
-    transform: rotate(90deg);
-    right: 0;
-}
-.checkbox{
-    padding-left: 30px;
-    margin-bottom: 20px;
-    display: block;
-    cursor: pointer;
-}
-.checkbox__input{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
-.checkbox__box{
-    position: absolute;
-    margin-left: -30px;
-    width: 13px;
-    height: 13px;
-    border: 2px solid #909090;
+.btn-toggle {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 20px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.btn-toggle__minus {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #1B1A17;
+}
+
+.btn-toggle__plus {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #1B1A17;
+}
+
+.btn-toggle__plus::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #1B1A17;
+  transform: rotate(90deg);
+  right: 0;
+}
+
+.filter__range-wrapper {
+
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.filter__range-scale {
+
+  position: relative;
+  width: 100%;
+
+  height: 1px;
+  background-color: #D4D4D4;
+}
+
+.filter__range-bar {
+  width: 50%;
+  height: 2px;
+  margin-left: 20%;
+  background-color: #1B1A17;
+}
+
+.filter__toggle {
+  position: absolute;
+  bottom: 13px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1B1A17;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filter__toggle:focus {
+  outline: none;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  /* outline-color: tomato; */
+}
+
+.filter__toggle-min {
+  left: 40px;
+}
+
+.filter__toggle-max {
+  right: 60px;
+}
+
+.filter__toggle-price {
+  position: absolute;
+  bottom: -10px;
+}
+
+.filter__price-min {
+  left: 25px;
+}
+
+.filter__price-max {
+  right: 50px;
+}
+
+.checkbox {
+  padding-left: 30px;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox__box {
+  position: absolute;
+  margin-left: -30px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #909090;
 }
 .checkbox__input:checked + .checkbox__box {
     background-image: url('../img/check.svg');

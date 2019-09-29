@@ -1,19 +1,22 @@
-html{
-    font-family: 'Roboto' , 'Sans-serif';
-    font-size: 14px;
-    box-sizing: border-box;
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
 }
-.sr-only{
+
+.sr-only {
     height: 1px;
     width: 1px;
     overflow: hidden;
     position: absolute;
 }
-.container{
-    max-width: 1160px;
-    padding: 0 20px;
-    margin: 0 auto;
+
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
+
 h2{
     font-family: 'Playfair Display', sans-serif;
     font-size: 32px;
@@ -59,39 +62,46 @@ h2{
     align-self: center;
 }
 .main-btn:hover svg {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*Catalog*/
 
-.breadcrumb__list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.breadcrumb__item{
-    margin-right: 15px;
+.breadcrumb__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.breadcrumb__item a{
-    color: #BDB9B5;
-    text-decoration: none;
-    font-weight: 500;
-}
-.breadcrumb__item a[href]:after{
-    content: '>';
-    margin-left: 15px;
-}
-.breadcrumb__item a:not([href]){
-    color: #555248;
+.breadcrumb__item {
+  margin-right: 15px;
 }
 
-.main-catalog h1{
-    font-family: 'Playfair Display', serif;
-    color: #1B1A17;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.breadcrumb__item a {
+  color: #BDB9B5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb__item a[href]:after {
+  content: '>';
+  margin-left: 15px;
+}
+
+.breadcrumb__item a:not([href]) {
+  color: #555248;
+}
+
+.main-catalog {
+  position: relative;
+}
+
+.main-catalog h1 {
+  font-family: 'Playfair Display', serif;
+  color: #1B1A17;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 /* Filter */
 
@@ -107,7 +117,7 @@ h2{
   display: block;
   text-transform: uppercase;
   width: 100%;
-  border:2px solid #E7E0CF;
+  border: 2px solid #E7E0CF;
   background: none;
   cursor: pointer;
 }
@@ -162,6 +172,24 @@ fieldset legend {
   transform: rotate(90deg);
   right: 0;
 }
+
+.sort__block {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+.sort__title {
+  color: #BDB9B5;
+}
+
+.sort__select {
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  color: #1B1A17;
+}
+
 
 .filter__range-wrapper {
 

@@ -103,6 +103,44 @@ h2{
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+.pagination__list {
+
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+}
+
+.pagination__item {
+  text-decoration: none;
+  color: #B6B6B6;
+  margin-left: 10px;
+
+}
+
+.pagination__item-active {
+  color: #1B1A17;
+}
+
+.pagination__prev,
+.pagination__next {
+  display: inline-flex;
+  color: #1B1A17;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  vertical-align: middle;
+}
+
+.pagination__prev:hover svg,
+.pagination__next:hover svg{
+  transition: 0.3s;
+  transform: scale(1.4);
+}
+.pagination__item:hover {
+
+  color: black;
+}
 /* Filter */
 
 .filter {
@@ -276,53 +314,58 @@ fieldset legend {
   border: 2px solid #909090;
 }
 .checkbox__input:checked + .checkbox__box {
-    background-image: url('../img/check.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #6F6E6D;
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #6F6E6D;
 }
+
 .checkbox__input:focus + .checkbox__box {
-    outline: 2px solid tomato;
+  outline: 2px solid tomato;
 }
 
 /*Products*/
-.content{
-    display: flex;
-    justify-content: space-between;
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
 }
-.products__list{
-    width: 900px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.product__item{
-    width: 252px;
 
-    margin-bottom: 60px;
-    position: relative;
+.products__list {
+  width: 900px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.product__item {
+  width: 252px;
+  margin-bottom: 60px;
+  position: relative;
 }
-.product__title{
-    font-weight: 700;
-    font-size: 14px;
 
+.product__title {
+  font-weight: 700;
+  font-size: 14px;
 }
-.product__btn{
-    display: inline;
-    position: absolute;
-    top: 7px;
-    right: 0;
+
+.product__btn {
+  display: inline;
+  position: absolute;
+  top: 7px;
+  right: 0;
 }
-.product__img{
-    display: block;
-    margin: -80px auto;
-    width: 172px;
-    height: 287px;
-    object-fit: cover;
+
+.product__img {
+  display: block;
+  margin: -80px auto;
+  width: 172px;
+  height: 287px;
+  object-fit: cover;
 }
 
 /* subscribe */

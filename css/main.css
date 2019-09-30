@@ -515,3 +515,94 @@ fieldset legend {
 .footer__list li a:hover {
   text-decoration: underline;
 }
+
+
+/* Product Page */
+.product__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__photo {
+  width: 560px;
+}
+
+.product__desc {
+  width: 560px;
+}
+
+.product__desc h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #444240;
+}
+
+.product__tabs {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.product__tab {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 40px;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+
+.product__tab-active {
+  border-bottom: 1px solid #c4c0b6;
+}
+
+.product__description p{
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.product__cost {
+  font-size: 24px;
+  color: #686868;
+}
+
+.product__btn-order {
+  margin-top: 54px;
+  padding: 25px 56px;
+  border: none;
+  font-size: 12px;
+  background: #31302c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.image__main {
+  position: relative;
+  text-align: center;
+}
+
+.image__prev,
+.image__next {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.image__prev {
+  left: 0;
+  top: 50%;
+}
+
+.image__next {
+  right: 0;
+  top: 50%;
+}
+
+.image__list {
+  display: flex;
+  list-style: none;
+}
